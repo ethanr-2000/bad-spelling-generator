@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"></html>
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76BETHHR1L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-76BETHHR1L');
+    </script>
+	<title>Bad Spelling Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5"/>
+	<meta name="description" content="A tool for converting perfectly good text into a terribly spelt mess, while keeping the pronunciation constant.">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png">
+	<link rel="manifest" href="../static/site.webmanifest">
+	<link rel="mask-icon" href="../static/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="../static/favicon.ico">
+	<link href="../static/base.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script data-ad-client="ca-pub-3763534183103616" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fddf81cf0765f001191cacd&product=inline-share-buttons" async="async"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=308323847240287&autoLogAppEvents=1" nonce="VM8dAT0I"></script>
+	<script type="text/javascript">window.onbeforeunload = function () { window.scrollTo(0, 0); }</script>
+</head>
+<div class="main-area">
+	<h1>BAD SPELLING GENERATOR</h1>
+	<div class="left-input">
+		<textarea id="input" placeholder="Stuff to spell badly goes here..." maxlength="280"></textarea>
+	</div>
+	<div class="right-output">
+		<div id="output"></div>
+	</div>
+	<div class="explanation" id="explanation">
+		<div id="explanation-content">
+			<h3>What Is This?</h3>
+			<p>Bad Spelling Generator is a tool that automatically changes the spelling of a word with the goal of the pronunciation not changing. By hovering over a syllable in the badly-spelled output, you can see where that spelling has been taken from.</p>
+			<h3>What's The Point?</h3>
+			<p>It's mostly just a bit of fun. But it does highlight something we've all struggled with at some point in our lives.</p>
+			<p>That is, that English spelling can often tell us NOTHING about how a word is pronounced. That is, the same string of letters can be pronounced completely differently even when used in the same context!</p>
+			<div class="example-img-div">
+				<img id="example-img" src="../static/potato-example.jpg" alt="Example bad spelling of potato"/>
+			</div>
+			<p>Ever seen the image above? It's a good example of this.</p>
+			<p>If you've already been taught all the edge cases, it's not that big a deal. But say you were just learning English or you came across a new word written down that you'd never heard outloud. Are you confident you could get it right?</p>
+			<p>An example of a word segment that can be pronounced in many, many ways is 'ough'. <a href="https://en.wikipedia.org/wiki/Ough_(orthography)" target="_blank" rel="noopener noreferrer">It can be pronounced 'ow', 'off', 'uff', 'oh', 'or', 'ooh' and more!</a></p>
+			<p>English is confusing, but we often forget it. That's what inspired Bad Spelling Generator.</p>
+			<h3>How Does It Work?</h3>
+			<p class="warning">This is not a perfect tool and is constantly being improved!</p>
+			<p>The core algorithm is as follows:</p>
+			<ol>
+				<li>Break down the input word into syllables</li>
+				<li>Work out the pronunciation of each syllable</li>
+				<li>Look up another word with a syllable that's pronounced the same</li>
+				<li>Replace the original syllable with the new one</li>
+			</ol>
+			<p>It uses the International Speech Lexicon dictionary, with the help of <a href="https://github.com/timmahrt/pysle">Pysle</a> to look up the pronunciations. Because of this, it is heavily biased towards American pronunciations.</p>
+			<h3>Want To Know More?</h3>
+			<p><a href="https://medium.com/@ethanr2000" target="_blank" rel="noopener noreferrer">I'm writing articles on Medium about how this works, so check out my profile and follow me for more details.</a></p>
+		</div>
+		<p id="read-more"><a href="javascript:void(0);" id="read-more-button">READ MORE ABOUT HOW THIS WORKS</a></p>
+	</div>
+	<div class="fb-comments-background">
+		<div class="fb-comments" data-href="https://www.badspellinggenerator.com" data-width="100%" data-numposts="5"></div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="row">
+		<div class="col-left">
+			<p>Hi, I'm Ethan. I'm a third year undergraduate at the Dyson Institute. This project was created entirely in my spare time.</p>
+			<p>I also write articles about my programming projects on Medium. If you're interested about learning more about how this works, check me out there.</p>
+			<p>Wanna get in contact with me? Add me on LinkedIn or GitHub.</p>
+		</div>
+		<div class="col-right">
+			<a href="https://medium.com/@ethanr2000"><img src="../static/medium-logo.png" alt="Medium Icon" class="social"/></a>
+			<a href="https://www.linkedin.com/in/ethanroberts2000/"><img src="../static/linkedin-logo.png" alt="Linkedin Icon" class="social"/></a>
+			<a href="https://github.com/ethanr-2000"><img src="../static/github-logo.png" alt="Github Icon" class="social"/></a>
+		</div>
+	</div>
+	<hr noshade="noshade" style="color: #999999">
+	<p id="copyright">Copyright &copy; Ethan Roberts 2020</p>
+</div>
+<div class="sharethis-inline-share-buttons"></div>
+
+<script src="../static/spellBadButton.js"></script>
