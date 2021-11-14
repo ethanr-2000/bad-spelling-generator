@@ -1,5 +1,5 @@
 # Bad Spelling Generator
-Bad spelling generator re-spells text while keeping the pronunciation the same. See it live at [badspellinggenerator.com](https://www.bsg.ethanr.co.uk)
+Bad spelling generator re-spells text while keeping the pronunciation the same. See it live [here](https://bad-spelling-generator.herokuapp.com/)
 
 This repo includes the **webapp** (source for the website).
 
