@@ -4,7 +4,6 @@ click==7.1.2
 Flask==1.1.2
 Flask-Cors==3.0.9
 future==0.18.2
-gunicorn==20.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 jmespath==0.10.0
@@ -14,7 +13,7 @@ MarkupSafe==1.1.1
 pysle==2.3.0
 python-dateutil==2.8.1
 pytz==2020.4
-regex==2020.11.13
+regex==2022.10.31
 six==1.15.0
 tqdm==4.54.1
 urllib3==1.26.2
