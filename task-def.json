@@ -4,7 +4,7 @@
   "containerDefinitions": [
       {
           "name": "bad-spelling-generator", 
-          "image": "197239729734.dkr.ecr.eu-west-2.amazonaws.com/bad-spelling-generator:latest", 
+          "image": "${{ secrets.ECR_REPOSITORY }}", 
           "portMappings": [
               {
                   "containerPort": 5000, 
@@ -16,6 +16,7 @@
           "command": ["app.py"]
       }
   ], 
+  "executionRoleArn": "$ {{ secrets.EXECUTION_ROLE_ARN }}",
   "requiresCompatibilities": [
       "FARGATE"
   ], 
