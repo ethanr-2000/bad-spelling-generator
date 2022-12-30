@@ -16,7 +16,7 @@
           "command": ["app.py"]
       }
   ], 
-  "executionRoleArn": "$ {{ secrets.EXECUTION_ROLE_ARN }}",
+  "executionRoleArn": "${{ secrets.EXECUTION_ROLE_ARN }}",
   "requiresCompatibilities": [
       "FARGATE"
   ], 
