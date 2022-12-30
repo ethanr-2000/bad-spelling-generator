@@ -53,6 +53,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
+    - name: Replace tokens
+      uses: cschleiden/replace-tokens@v1.2
+      with:
+        files: $ECS_TASK_DEFINITION
+      env:
+        ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+        EXECUTION_ROLE_ARN: ${{ secrets.EXECUTION_ROLE_ARN }}
+
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
