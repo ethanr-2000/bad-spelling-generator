@@ -4,7 +4,7 @@
   "containerDefinitions": [
       {
           "name": "bad-spelling-generator", 
-          "image": "bad-spelling-generator:latest", 
+          "image": "197239729734.dkr.ecr.eu-west-2.amazonaws.com/bad-spelling-generator:latest", 
           "portMappings": [
               {
                   "containerPort": 5000, 
