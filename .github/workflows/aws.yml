@@ -56,11 +56,10 @@ jobs:
     - name: Replace tokens
       uses: cschleiden/replace-tokens@v1.2
       with:
-        files: "['./task-def.json']"
+        files: '["./task-def.json"]'
       env:
         ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
         EXECUTION_ROLE_ARN: ${{ secrets.EXECUTION_ROLE_ARN }}
-
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
