@@ -1,3 +1,4 @@
 .idea
 virt
 .aws-sam/
+.DS_Store
