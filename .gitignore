@@ -1,6 +1,3 @@
 .idea
 virt
-webapp/.ebignore
-webapp/.elasticbeanstalk
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+.aws-sam/
