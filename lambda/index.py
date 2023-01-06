@@ -20,6 +20,7 @@ def handler(event, context):
       response['words'].append(bad_spell_response)
 
   return {
+    'isBase64Encoded': False,
     'statusCode': 200,
     'headers': {
       'Access-Control-Allow-Origin': '*',
