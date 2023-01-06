@@ -29,7 +29,7 @@ function spellBad() {
     }
 
     let request = new XMLHttpRequest();
-    request.open("POST", '/spellbad');
+    request.open("POST", 'https://api.badspellinggenerator.ethanr.co.uk/spellbad');
     request.setRequestHeader("Content-Type", "application/json");
     request.onreadystatechange = (e) => {
         if (request.readyState === 4 && request.status === 200) {
