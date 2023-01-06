@@ -23,7 +23,7 @@ def handler(event, context):
     'statusCode': 200,
     'headers': {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Credentials': true,
+      'Access-Control-Allow-Credentials': True,
       'Access-Control-Allow-Headers': "Origin, X-Requested-With, Content-Type, Accept"
     },
     'body': json.dumps(response)
